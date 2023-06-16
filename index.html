@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Technical Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>CSS Documentation</header>
+      <div class="links">
+      <a class="nav-link" href="#About_CSS">About CSS</a>
+      <a class="nav-link" href="#Basic_code_examples">Basic code examples</a>
+      <a class="nav-link" href="#CSS_and_SASS">CSS and SASS</a>
+      <a class="nav-link" href="#CSS_Selectors">CSS Selectors</a>
+      <a class="nav-link" href="#Box_Model">Box Model</a>
+      <a class="nav-link" href="#Media_Queries">Media Queries</a>
+    </div>
+    </nav>
+    <main id="main-doc">
+      <section id="About_CSS" class="main-section">
+        <header>About CSS</header>
+        <p>
+          CSS (Cascading Style Sheets) is a fundamental web technology used for
+          styling and formatting web pages. It separates the content from the
+          presentation, allowing developers to control the layout, colors,
+          fonts, and other visual aspects of a website. CSS simplifies website
+          maintenance and promotes consistency across multiple web pages.
+        </p>
+        <p>
+          CSS plays a crucial role in modern web development by enabling
+          developers to style and design web pages, ensuring visual consistency,
+          responsiveness, and enhanced user experience.
+        </p>
+        <p>Main topics covered in the documentation</p>
+        <ol>
+          <li>Basic examples to CSS</li>
+          <li>Main differences between CSS and SASS</li>
+          <li>Selectors</li>
+          <li>Box Model</li>
+          <li>Media Queries</li>
+        </ol>
+      </section>
+    
+    
+    <section id="Basic_code_examples" class="main-section">
+        <header>Basic code examples</header>
+        <p>Here are three basic CSS code examples with explanations:   
+        </p>
+        <div>This code targets an HTML element with the class name "my-text" and sets its text color to blue. The color property controls the color of the text within the selected element
+        </div>
+        <pre><code>.my-text {
+        color: blue;
+      }</code></pre>
+    
+        <div>This code sets the background color of the entire webpage's body to a light gray shade (#f2f2f2). The background-color property defines the background color of an element.
+        </div>
+        <pre><code>body {
+       background-color: #f2f2f2;
+      }</code></pre>
+        <div>"This code targets all <pre><h1></pre> heading elements and specifies their font size as 24 pixels and the font family as Arial or any sans-serif font available on the user's device. The font-size property controls the size of the font, and the font-family property defines the font face to be used."
+        </div>
+        <pre><code>h1 {
+     font-size: 24px;
+     font-family: Arial, sans-serif;
+     }</code></pre>
+</section>
+
+<section id="CSS_and_SASS" class="main-section">
+  <header>CSS and SASS</header>
+  <p>
+      CSS (Cascading Style Sheets) is a standard web technology used for styling web pages. SASS (Syntactically Awesome Style Sheets) is a CSS preprocessor that adds additional features to CSS, such as variables, nesting, mixins, and functions, to make styling more efficient and maintainable. SASS code is compiled into CSS before deployment.
+  </p>
+  <p> Main differences of CSS and SASS
+  <ul>
+    <li>Syntax: CSS uses a straightforward syntax with selectors, properties, and values, while SASS introduces additional features like variables, nesting, mixins, and functions, making the code more organized and reusable.</li>
+    <li>Compilation: CSS is interpreted by the browser directly, while SASS requires a compilation step. SASS files need to be compiled into CSS before they can be used on the web.</li>
+    <li>Reusability: SASS allows for the creation of reusable code snippets called mixins, which can be included in multiple places, reducing redundancy and improving code maintainability. CSS lacks this feature, requiring duplication of code in such scenarios.</li>
+  </ul>
+</p>
+</section>
+
+<section id="CSS_Selectors" class="main-section">
+    <header>CSS Selectors</header>
+    <p>CSS selectors are used to target specific HTML elements and apply styles to them. They allow developers to select elements based on their tag name, class, ID, attributes, and hierarchical relationships. 
+    </p>
+<div>Tag Selector:
+</div>
+  <pre><code>p {
+  color: red;
+  }</code></pre>
+<div>Class Selector:
+</div>
+  <pre><code>.highlight {
+  background-color: yellow;
+  }</code></pre>
+<div> Id Selector:
+</div>
+  <pre><code>#green-text {
+  color: green;
+  }</code>  </pre>
+  </section>
+
+  <section id="Box_Model" class="main-section">
+    <header>Box Model</header>
+    <div>The box model is a fundamental concept in CSS that defines how elements are structured and rendered on a webpage. It consists of four layers: content, padding, border, and margin.</div>
+    <p>Content: The content area represents the actual content of an element, such as text, images, or other HTML elements. Its dimensions are defined by properties like width and height.
+    </p>
+    <p>Padding: The padding area surrounds the content and provides space between the content and the element's border. It can be adjusted using properties like padding-top, padding-right, padding-bottom, and padding-left.
+    </p>
+    <p>Border: The border is a line that surrounds the padding and content areas. It can be styled using properties like border-width, border-style, and border-color.      
+    </p>
+    <p>Margin: The margin area creates space around the element and separates it from other elements. It can be controlled using properties like margin-top, margin-right, margin-bottom, and margin-left.   
+    </p>
+  </section>
+
+  <section id="Media_Queries" class="main-section">
+    <header>Media Queries</header>
+    <div>The box model is a fundamental concept in CSS that defines how elements are structured and rendered on a webpage. It consists of four layers: content, padding, border, and margin.</div>
+    <p>Media queries are a CSS feature that allows developers to apply different styles based on the characteristics of the device or viewport size. This enables responsive design, where webpages can adapt their layout and appearance to different screen sizes or devices. </p>
+    <p>Media queries use specific conditions, such as screen width, device orientation, pixel density, or media types, to determine when a particular set of styles should be applied.</p>
+    <p>Here's an example of a media query that adjusts the font size of a paragraph when the screen width is less than or equal to 600 pixels:</p>
+    <pre><code>@media screen and (max-width: 600px) {
+  p {
+   font-size: 14px;
+     }
+  }</code></pre>
+</section>
+
+</main>
+</body>
+</html>
